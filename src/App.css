@@ -1,0 +1,226 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.column h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.column h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px 12px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.styled-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 25px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.styled-checkbox:checked {
+  background-color: #a8d5fc;
+  border-color: #a8d5fc;
+}
+
+.styled-checkbox:checked::after {
+  font-size: 20px;
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 18px;
+}
+
+
+label {
+  display: block;
+  margin: 8px;
+}
+
+button {
+
+  text-align: center;
+  background-color: #4c74af;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 8px;
+}
+
+.btnCreate {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background-color: #4c74af;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 8px;
+}
+
+.btnSonidos {
+  text-align: center;
+  background-color: #2d4a75;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 8px;
+  margin-left: 150px;
+}
+
+.divCrear {
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeaea;
+}
+
+button:hover {
+  background-color: #2b4770;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #cccccc;
+}
+
+.member img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 5px;
+  border: 3px solid #007bff;
+  transition: transform 0.3s ease;
+}
+
+.member img:hover {
+  transform: scale(1.1);
+}
+
+.divMember {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Sonidos */
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_cards {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 20em;
+  height: 20em;
+  background-color: #fff;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #fff;
+  transition: 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px #000;
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 10px;
+}
+
+.card button {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #cc0000;
+}
